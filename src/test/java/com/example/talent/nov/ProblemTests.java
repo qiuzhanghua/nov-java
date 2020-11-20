@@ -37,11 +37,11 @@ public class ProblemTests {
         assertFalse(problem.solvable(List.of("AAA", "BB"), "BB"));
     }
 
-    @DisplayName("SIX + SIX + SEVEN = TWENTY")
+    @DisplayName("SIX + SEVEN + SEVEN = TWENTY")
     @Test
     public void test_solvable_05() {
         Problem problem = new Problem();
-        assertTrue(problem.solvable(List.of("SIX", "SIX", "SEVEN"), "TWENTY"));
+        assertTrue(problem.solvable(List.of("SIX", "SEVEN", "SEVEN"), "TWENTY"));
 
     }
 
@@ -52,7 +52,7 @@ public class ProblemTests {
         assertTrue(problem.solvable(List.of("I", "THINK", "IT", "BE", "THINE"), "INDEED"));
     }
 
-    @DisplayName("I + THINK + IT + BE + THINE = INDEED")
+    @DisplayName("SEND + MORE = MONEY")
     @Test
     public void test_solvable_07() {
         Problem problem = new Problem();
